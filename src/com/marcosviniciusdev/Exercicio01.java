@@ -7,7 +7,7 @@ public class Exercicio01 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Digite a sua idade\nanos: ");
+		System.out.println("Anos: ");
 		int idadeAnos = sc.nextInt();
 		
 		System.out.println("Meses: ");
@@ -16,8 +16,9 @@ public class Exercicio01 {
 		System.out.println("Dias: ");
 		int idadeDias = sc.nextInt();
 		
-		int totalDias = idadeDias;
-		totalDias = idadeDias + (idadeMeses * 31);
+		int totalDias = idadeAnos * 365 + idadeMeses * 30 + idadeDias;
+		
+		System.out.println("Sua idade em dias: " + totalDias);
 		
 		sc.close();
 		
